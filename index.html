@@ -4,91 +4,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1><b>FORMULIR PENDAFTARAN</b></h1>
-    <p>Bergabunglah dengan komunitas kami</p>
+    <div class="form">
+      <h2>FORMULIR PENDAFTARAN</h2>
+      <p class="pertama">Bergabunglah dengan komunitas kami</p>
+      <div class="form1">
+        <form>
+          <fieldset>
+            <legend><b>Informasi Pribadi</b></legend>
+            <br />
+            <div class="datadalam">
+              <label for="name">Nama Lengkap:</label>
 
-    <form>
-      <fieldset>
-        <legend>Informasi Pribadi</legend>
-        <label for="name">Nama Lengkap:</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Masukkan nama lengkap"
-        />
-        <br /><br />
-        <label for="email">Alamat Email</label>
-        <input
-          type="text"
-          name="email"
-          id="email"
-          placeholder="contoh@gmail.com"
-        />
-        <br /><br />
-        <label for="password">Password:</label>
-        <input type="date" name="password" id="password" />
-        <br /><br />
-        <label for="no-hp">Tanggal HP</label>
-        <input
-          type="number"
-          name="no-hp"
-          id="no-hp"
-          placeholder="0812-3456-7890"
-        />
-      </fieldset>
-      <fieldset>
-        <legend>Informasi Tambahan</legend>
-        <p>Jenis Kelamin:</p>
-        <input type="radio" id="pria" name="jeniskelamin" /><label for="pria"
-          >Laki-laki</label
-        >
-        <input type="radio" id="wanita" name="jeniskelamin" /><label
-          for="wanita"
-          >Perempuan</label
-        >
-        <br /><br />
-        <label for="provinsi">Provinsi</label>
-        <select>
-          <option>Central Java</option>
-          <option>East Java</option>
-          <option>West Java</option>
-        </select>
-        <br /><br />
-        <p>Hobi (Bisa pilih lebih dari satu):</p>
+              <br />
 
-        <input type="checkbox" name="membaca" id="membaca" />
-        <label for="membaca">Membaca</label>
+              <input
+                class="label"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Masukkan nama lengkap"
+              />
+              <br /><br />
+              <label for="email">Alamat Email</label>
+              <br />
+              <input
+                class="label"
+                type="text"
+                name="email"
+                id="email"
+                placeholder="contoh@gmail.com"
+              />
+              <br /><br />
+              <label for="password">Password:</label>
+              <br />
+              <input class="label" type="date" name="password" id="password" />
+              <br /><br />
+              <label for="no-hp">Tanggal HP</label>
+              <br />
+              <input
+                class="label"
+                type="number"
+                name="no-hp"
+                id="no-hp"
+                placeholder="0812-3456-7890"
+              />
+            </div>
+          </fieldset>
 
-        <input type="checkbox" name="olahraga" id="olahraga" />
-        <label for="olahraga">Olahraga</label>
+          <br />
 
-        <input type="checkbox" name="musik" id="musik" />
-        <label for="musik">Musik</label>
+          <fieldset>
+            <legend><b>Informasi Tambahan</b></legend>
+            <div class="datadalam">
+              <p>Jenis Kelamin:</p>
+              <input type="radio" id="pria" name="jeniskelamin" />
+              <label for="pria">Laki-laki</label>
+              <input type="radio" id="wanita" name="jeniskelamin" />
+              <label for="wanita">Perempuan</label>
+              <br /><br />
+              <label for="provinsi">Provinsi</label>
+              <br />
+              <select class="label">
+                <option>Central Java</option>
+                <option>East Java</option>
+                <option>West Java</option>
+              </select>
+              <br /><br />
+              <p>Hobi (Bisa pilih lebih dari satu):</p>
 
-        <input type="checkbox" name="traveling" id="traveling" />
-        <label for="traveling">Traveling</label>
-        <br /><br />
-        <label for="biodata">Biodata Singkat</label>
-        <textarea name="biodata" id="biodata">
-Ceritakan sedikit tentang diri anda</textarea
-        >
-        <br /><br />
-        <label for="profile">Upload Your Profile Picture:</label>
-        <input type="file" name="profile" id="profile" />
-      </fieldset>
-      <br /><br />
+              <input type="checkbox" name="membaca" id="membaca" />
+              <label for="membaca">Membaca</label>
 
-      <input type="checkbox" name="verification" id="verification" />
-      <label for="verification"
-        >Saya menyetujui <a href="#">syarat dan ketentuan</a> yang
-        berlaku</label
-      >
-      <br /><br />
-      <input type="submit" value="Daftar Sekarang" />
-      <input type="reset" value="Reset Form" />
-    </form>
+              <input type="checkbox" name="olahraga" id="olahraga" />
+              <label for="olahraga">Olahraga</label>
+
+              <input type="checkbox" name="musik" id="musik" />
+              <label for="musik">Musik</label>
+
+              <input type="checkbox" name="traveling" id="traveling" />
+              <label for="traveling">Traveling</label>
+              <br /><br />
+              <label for="biodata">Biodata Singkat</label>
+              <br />
+              <textarea
+                name="biodata"
+                id="biodata"
+                placeholder="Ceritakan sedikit tentang diri anda "
+              ></textarea>
+              <br /><br />
+              <label for="profile">Upload Your Profile Picture:</label>
+              <br />
+              <input type="file" name="profile" id="profile" />
+            </div>
+          </fieldset>
+          <br /><br />
+
+          <input type="checkbox" name="verification" id="verification" />
+          <label for="verification"
+            >Saya menyetujui <a href="#">syarat dan ketentuan</a> yang
+            berlaku</label
+          >
+          <br /><br />
+          <div class="button">
+            <input class="input" type="button" value="Daftar Sekarang" />
+            <input class="input2" type="reset" value="Reset Form" />
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
